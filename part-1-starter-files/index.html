@@ -61,6 +61,11 @@
 
             </div>
         </header>
+        <!-- Empty Modal container -->
+        <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
+            <div id="modalContent"></div>
+        </div>
+
         <div class="absolute inset-0 hidden md:block" id="wrapper-canvas">
 
         </div>
@@ -86,10 +91,10 @@
                     <h1 class="pointer-events-none text-[36px] md:text-[64px] font-['Spartan'] mr-12">Subham Kumar</h1>
                     <p class="pointer-events-none text-[16px] font-['Merriweather'] italic mb-8">Java Backend Developer
                     </p>
-                    <button
+                    <button onclick="openAboutMe()" id="aboutModal"
                         class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 ">
-                        
-                        <a href="/part-1-starter-files/tooltip.html">About Me</a>
+
+                        About Me
                         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
                             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                             xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +223,7 @@
             <a href="https://adoptnettech.com/" target="_blank" class="flex w-full relative">
                 <div class="relative group hover:scale-105 ease-linear ease-in-out duration-200">
                     <span
-                        class="flex group-hover:-top-11 ease-jump duration-200 bg-[#fc815c] px-4 absolute left-1/2 -translate-x-1/2  top-5 py-2  rounded w-max items-center gap-1 after:content-[''] after:w-4 after:h-5 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Harigurus
+                        class="flex group-hover:-top-11 ease-jump duration-200 bg-[#fc815c] px-4 absolute left-1/2 -translate-x-1/2  top-5 py-2  rounded w-max items-center gap-1 after:content-[''] after:w-4 after:h-5 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">BSS
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -245,7 +250,7 @@
                     solutions.
                 </p>
                 <ul class="flex flex-wrap gap-4">
-                    <li class=" px-[8px]  py-[10px] font-bold">
+                    <li class="px-4 py-2 bg-[#1f2667] rounded">
                         #Core Java
                     </li>
                     <li class=" px-[8px]  py-[10px] font-bold">
@@ -307,7 +312,8 @@
             <a href="" class="flex w-full ">
                 <div class="relative group hover:scale-105 ease-linear ease-in-out duration-200 ml-auto">
                     <span
-                        class="flex group-hover:-top-11 ease-jump duration-200 bg-[#fc815c] px-4 absolute left-1/2 -translate-x-1/2  top-5 py-2  rounded w-max items-center gap-1 after:content-[''] after:w-4 after:h-5 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Harigurus
+                        class="flex group-hover:-top-11 ease-jump duration-200 bg-[#fc815c] px-4 absolute left-1/2 -translate-x-1/2  top-5 py-2  rounded w-max items-center gap-1 after:content-[''] after:w-4 after:h-5 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Quick
+                        Quizzes
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -358,7 +364,7 @@
                         class="bg-gray-50  border-2 outline-none text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
                         placeholder="name@flowbite.com">
                 </div>
-                
+
 
             </form>
 
@@ -368,6 +374,7 @@
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
     <script src="./matter.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
