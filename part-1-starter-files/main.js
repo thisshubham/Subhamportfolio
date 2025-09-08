@@ -56,3 +56,36 @@ window.onload = () => {
   const p = document.getElementById("typing-p");
   loopTyping(h1, p);
 };
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const form = document.getElementById("contactForm");
+
+//   if (form) {
+//     form.addEventListener("submit", async function(e) {
+//       e.preventDefault();
+
+//       const data = {
+//         name: document.getElementById("name").value,
+//         email: document.getElementById("email").value,
+//         message: document.getElementById("message").value
+//       };
+
+//       try {
+//         const response = await fetch("https://script.google.com/macros/s/AKfycbwm0T8EsLR_qUqTJYfUP2cuqh2b_HTPXWExrs-S7KHWCUGW9A3ECDppYN-0yVNaSFQX/exec", {
+//           method: "POST",
+//           body: JSON.stringify(data),
+//           headers: { "Content-Type": "application/json" }
+//         });
+
+//         const result = await response.text();
+//         console.log("Server response:", result);
+//         alert(result);
+
+//         form.reset(); // clear form after success
+//       } catch (err) {
+//         console.error("Error sending message:", err);
+//         alert("Something went wrong. Please try again later.");
+//       }
+//     });
+//   }
+// });
