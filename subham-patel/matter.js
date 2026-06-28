@@ -2,7 +2,7 @@ var canvas = document.querySelector('#wrapper-canvas');
 
 var dimensions = {
   width: window.innerWidth,
-  height: window.innerWidth,
+  height: window.innerHeight,
 }
 
 Matter.use('matter-attractors')
